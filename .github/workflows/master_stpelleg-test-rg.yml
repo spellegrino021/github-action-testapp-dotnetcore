@@ -43,15 +43,15 @@ jobs:
 
     steps:
     - name: Download artifact from build job
-    uses: actions/download-artifact@v2
-    with:
-    name: .net-app
+      uses: actions/download-artifact@v2
+      with:
+        name: .net-app
 
     - name: Deploy to Azure Web App
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'stpelleg-test-rg'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.TESTPROFILEDATA }}
-          package: .
+      with:
+        app-name: 'stpelleg-test-rg'
+        slot-name: 'production'
+        publish-profile: ${{ secrets.TESTPROFILEDATA }}
+        package: .
