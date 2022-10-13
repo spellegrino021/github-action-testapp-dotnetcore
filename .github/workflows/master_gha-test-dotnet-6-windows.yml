@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'gha-test-dotnet-6-windows'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7248B64585634D3DA2BDE52D5FC0FA32 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B281E1DC77E3488E8C684AB6DDF7A950 }}
           package: .
