@@ -59,7 +59,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          resource-group: 'GitHubTestRG'
+          resource-group-name: 'GitHubTestRG'
           app-name: 'gha-test-dotnet-6-linux'
           slot-name: 'Production'
           package: .
